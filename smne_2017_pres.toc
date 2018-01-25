@@ -1,0 +1,7 @@
+\select@language {english}
+\beamer@sectionintoc {1}{Motiva\c {c}\~ao}{3}{0}{1}
+\beamer@sectionintoc {2}{Descri\c {c}\~ao do problema}{3}{0}{2}
+\beamer@sectionintoc {3}{Heur\'istica de corre\c {c}\~ao de rotas}{3}{0}{3}
+\beamer@sectionintoc {4}{Heur\'istica de Empacotamento}{3}{0}{4}
+\beamer@sectionintoc {5}{Heur\'istica de Escoamento de Pontos (H.E.P)}{3}{0}{5}
+\beamer@sectionintoc {6}{Resultados}{3}{0}{6}
