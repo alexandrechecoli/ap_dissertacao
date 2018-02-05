@@ -13,8 +13,10 @@
 
 
 
-\logo{\includegraphics[height=1cm]{example-image-c}}
-\title[XXXX]{Uma nova heur\'istica para o "Single-Picker-Routing-Problem" com restri\c{c}\~oes pr\'aticas de carregamento}
+%\logo{\includegraphics[height=1cm]{example-image-c}}
+%\logo{\includegraphics[height=1cm]{CD_1}}
+\logo{\includegraphics[width=0.1\linewidth]{pressao_caixas}}
+\title[]{Uma nova heur\'istica para o "Single-Picker-Routing-Problem" com restri\c{c}\~oes pr\'aticas de carregamento}
 
 
 
@@ -54,6 +56,7 @@
 \section{Objetivos}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{Objetivos}
+
 	\begin{itemize}
 		\item{Estudar o modelo matematico de Scholz, adapatando-o para um m\'etodo heur\'istico}
 		\pause	
@@ -67,8 +70,11 @@
 	\end{itemize}
 \end{frame}
 
-\section{Descri\c{c}\~ao do problema}
+
 	\begin{frame}{Descri\c{c}\~ao do problema}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\section{Descri\c{c}\~ao do problema (SPRP)}
+	\framesubtitle{Original (SPRP)}	
 		Definir a rota em em um armaz\'em,de tal forma a visitar todos os pontos de coleta:
 			\begin{figure}
 			\pause
@@ -84,39 +90,102 @@
 	\end{frame}
 
 
+%Frame dividido na tela
+\begin{frame}{Descri\c{c}\~ao do problema}
+	\framesubtitle{(CSPRP)}
 \fboxsep=0pt
 \noindent{%
 	\begin{minipage}[t]{0.48\linewidth}
-		left part \\
-		aa \\
-		aa \\
-\end{minipage}}%
+		\begin{itemize}
+		\item[]
+		\item \bfseries{Localiza\c{c}\~ao Geometrica das caixas}
+		\item[] %itemize que esconde o bullet, só para o posicionamento ficar correto na imagem
+		\item[]
+		\item[]
+		%\item \bfseries{Restri\c{c}\~oes de empilhamento m\'aximo das caixas}
+		\end{itemize}
+
+	\end{minipage}}%
 \hfill%
 {%
 	\begin{minipage}[t]{0.48\linewidth}
-			\begin{figure}
-		
-			\includegraphics[width=1\linewidth]{CD_1}
-			\caption{Representa\c{c}\~ao de armaz\'em via grafo}
-			
+		\begin{figure}			
+			\includegraphics[width=1\linewidth]{volume_caixas}
 		\end{figure}
+		
+
 	\end{minipage}
 }
+\end{frame}
+
+\begin{frame}{Descri\c{c}\~ao do problema}
+	\framesubtitle{(CSPRP)}
+	\fboxsep=0pt
+	\noindent{%
+		\begin{minipage}[t]{0.48\linewidth}
+			\begin{itemize}
+				\item[]
+				\item \bfseries{Localiza\c{c}\~ao Geometrica das caixas}
+				\item[] %itemize que esconde o bullet, só para o posicionamento ficar correto na imagem
+				\item[]
+				\item[]
+				\item \bfseries{Restri\c{c}\~oes de empilhamento m\'aximo das caixas}
+			\end{itemize}
+			
+	\end{minipage}}%
+	\hfill%
+	{%
+		\begin{minipage}[t]{0.48\linewidth}
+			\begin{figure}			
+				\includegraphics[width=1\linewidth]{volume_caixas}
+			\end{figure}
+			\begin{figure}			
+				\includegraphics[width=0.45\linewidth]{pressao_caixas}
+				
+			\end{figure}
+		\end{minipage}
+	}
+\end{frame}
+
+\begin{frame}{Descri\c{c}\~ao do problema}
+	\framesubtitle{(CSPRP)}
+	\fboxsep=0pt
+	\noindent{%
+		\begin{minipage}[t]{0.48\linewidth}
+			\begin{itemize}
+				\item[]
+				\item {{Determinar um {\bfseries conjunto}} de rotas, tais que:
+					\begin{itemize}
+						\item todos os itens sejam coletados 
+						\item n~ao exista sobreposi\c{c}\~ao de caixas no palete 
+					\end{itemize}
+				 
+				 
+		         }
+			\end{itemize}
+			
+	\end{minipage}}%
+	\hfill%
+	{%
+		\begin{minipage}[t]{0.48\linewidth}
+			\begin{figure}			
+				\includegraphics[width=1\linewidth]{volume_caixas}
+			\end{figure}
+			\begin{figure}			
+				\includegraphics[width=0.45\linewidth]{pressao_caixas}
+				
+			\end{figure}
+		\end{minipage}
+	}
+\end{frame}
 
 
-	\begin{frame}{Descri\c{c}\~ao do problema}
-	Definir as rota em em um armaz\'em,de tal forma a visitar todos os pontos decoleta, e em cada rota, as restri\c{c}\~oes de carregamento sejam satisfeitas:
-	\begin{itemize}
-		\item Posicionamento geometrico
-	\end{itemize}
-	\begin{figure}
-		\pause
-		\includegraphics[width=1\linewidth]{CD_1}
-		\caption{Representa\c{c}\~ao de armaz\'em via grafo}
-		
-	\end{figure}
 
-	\end{frame}
+
+
+
+
+
 
 
 \section{Heur\'istica de corre\c{c}\~ao de rotas} %
